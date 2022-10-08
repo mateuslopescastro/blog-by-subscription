@@ -5,7 +5,7 @@
 
 .headerContent {
   height: 5rem;
-  max-height: 1120px;
+  max-width: 1120px;
 
   margin: 0 auto;
   padding: 0 2rem;
@@ -57,5 +57,9 @@
         background: var(--yellow-500);
       }
     }
+  }
+
+  button {
+    margin-left: auto;
   }
 }

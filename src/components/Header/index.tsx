@@ -1,5 +1,7 @@
 import css from "./styles.module.scss";
 
+import { SignInButton } from "../SignInButton";
+
 export function Header() {
   return (
     <header className={css.headerContainer}>
@@ -12,6 +14,8 @@ export function Header() {
           </a>
           <a href="">Posts</a>
         </nav>
+
+        <SignInButton />
       </div>
     </header>
   );
