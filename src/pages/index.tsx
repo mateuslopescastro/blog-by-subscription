@@ -1,3 +1,13 @@
+import Head from "next/head";
+
 export default function Home() {
-  return <span>Hello world</span>;
+  return (
+    <>
+      <Head>
+        <title>Home | ig.news</title>
+      </Head>
+
+      <span>Hello world</span>
+    </>
+  );
 }
