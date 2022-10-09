@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+import css from "../styles/pages/home.module.scss";
+
 export default function Home() {
   return (
     <>
@@ -7,7 +9,22 @@ export default function Home() {
         <title>Home | ig.news</title>
       </Head>
 
-      <span>Hello world</span>
+      <main className={css.contentContainer}>
+        <section className={css.hero}>
+          <span>Hey, welcome</span>
+
+          <h1>
+            News about the <span>React</span> world.
+          </h1>
+
+          <p>
+            Get access to all the publications <br />
+            <span>for $9.90 month</span>
+          </p>
+        </section>
+
+        <img src="/images/avatar.svg" alt="Girl coding" />
+      </main>
     </>
   );
 }
